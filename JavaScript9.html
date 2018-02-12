@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+
+<body>
+
+<h1 id="output">paint me!</h1>
+
+<select id="colorPalette" onchange="painter()">
+	<option value="red">Red
+	<option value="blue">Blue
+	<option value="green">Green
+</select>
+
+<script type="text/javascript">
+	function painter(){
+		var x = document.getElementById("colorPalette").value;
+		document.body.style.backgroundColor = x;
+		if(x == "blue"){
+			document.getElementById("output").style.color="white";
+		}else{
+			document.getElementById("output").style.color="black";
+		}
+
+	}
+</script>
+
+</body>
+</html>
