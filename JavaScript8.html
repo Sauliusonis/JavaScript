@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+
+<body>
+
+<p id="mdown" onmousedown="mouseDown()" onmouseup="mouseUp()">This is text, that will be changed during mousedown</p>
+
+<script>
+	function mouseDown(){
+		document.getElementById("mdown").style.color="orange";
+	}
+
+	function mouseUp(){
+		document.getElementById("mdown").style.color="black";
+	}
+</script>
+
+</body>
+</html>
