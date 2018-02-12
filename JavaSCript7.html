@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+	<h2 id="output"> Let's do the math</h2>
+	<input type="number" id="input1"></input>
+	<input type="number" id="input2"></input>
+
+	<br>
+	<button type="button" onclick="sudetis()">Sudetis</button>
+	<button type="button" onclick="skirtumas()">Skirtumas</button>
+	<button type="button" onclick="daugyba()">Daugyba</button>
+	<button type="button" onclick="dalyba()">Dalyba</button>
+
+	<script>
+		function priskirti(){
+			var x = Number(document.getElementById('input1').value);
+			var y = Number(document.getElementById('input2').value);
+			return[x,y];
+		
+		}
+
+		function sudetis(){
+			a = priskirti();
+			document.getElementById('output').innerHTML= a[0] + a[1];
+		}
+		function skirtumas(){
+			a = priskirti();
+			document.getElementById('output').innerHTML= a[0] - a[1];
+		}
+		function daugyba(){
+			a = priskirti();
+			document.getElementById('output').innerHTML= a[0] * a[1];
+		}
+		function dalyba(){
+			a = priskirti();
+			document.getElementById('output').innerHTML= a[0] / a[1];
+		}
+
+
+	</script>
+</body>
+</html>

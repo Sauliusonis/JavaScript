@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		function output(){
+			
+
+
+		}
+	</script>	
+</head>
+
+<body>
+	<h2> Let's have a Output!</h2>
+	<p id="outputplace">Output changes should be visible here</p>
+	<br>
+
+	<button type="button" onclick="		
+		document.getElementById('outputplace').innerHTML='output changed'
+		">
+		Change Inner HTML
+	</button>
+
+	<button type="button" onclick="		
+		// document.getElementById('outputplace').
+		document.write('output written')
+		">
+		Use Document Write
+	</button>
+
+	<button type="button" onclick="		
+		// document.getElementById('outputplace').
+		window.alert('ALARM!')
+		">
+		Alert!
+	</button>
+
+	<button type="button" onclick="		
+		// document.getElementById('outputplace').
+		console.log('Console Log!');
+		document.getElementById('outputplace').innerHTML='make sure to check the DEV tools for console output'
+		">
+		Console Log
+	</button>
+
+
+</body>
+</html>
