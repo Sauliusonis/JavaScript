@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<style type="text/css">
+		.squareWhite{
+			border: 3px solid black;
+			border-collapse: collapse;
+			display: inline-block;
+			overflow: hidden;
+		}
+	</style>
+	<body onKeyDown="showKey()" onLoad="generateBoard()">
+	<p id="output"></p>
+
+	<script>
+		function generateBoard(){
+
+		}
+		function showKey(){
+			
+
+			// document.getElementById('output').innerHTML=event.which || event.keyCode;;
+			var div = document.createElement("div");
+				div.style.width="100px";
+				div.style.height="100px";
+				div.style.background = "white";
+				div.className = "squareWhite";
+				// div.innerHTML="labas";
+				document.body.appendChild(div);
+
+			// document.getElementById('output').innerHTML=event.keyCode;;
+		}
+	</script>
+</body>
+</html>
